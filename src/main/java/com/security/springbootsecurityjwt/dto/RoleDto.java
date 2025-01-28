@@ -1,6 +1,5 @@
 package com.security.springbootsecurityjwt.dto;
 
-import com.security.springbootsecurityjwt.model.RoleEntity;
 
 import java.util.Set;
 
@@ -15,11 +14,9 @@ import lombok.Setter;
 @NoArgsConstructor
 @Setter
 @Getter
-public class UserDto {
+public class RoleDto {
 
-    private String username;
-    private String password;
-    private String email;
-    private Set<RoleEntity> roles;
+  private String role;
+  private Set<String> permissionList;
 
 }

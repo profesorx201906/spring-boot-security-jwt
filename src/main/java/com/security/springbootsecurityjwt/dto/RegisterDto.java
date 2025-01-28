@@ -1,5 +1,7 @@
 package com.security.springbootsecurityjwt.dto;
 
+import java.util.List;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
@@ -16,5 +18,6 @@ public class RegisterDto {
     private String username;
     private String password;
     private String email;
+   private List<RoleDto> role;
 
 }

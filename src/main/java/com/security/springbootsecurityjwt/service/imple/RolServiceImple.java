@@ -1,6 +1,7 @@
 package com.security.springbootsecurityjwt.service.imple;
 
-import com.security.springbootsecurityjwt.model.Rol;
+import com.security.springbootsecurityjwt.model.RoleEntity;
+import com.security.springbootsecurityjwt.model.RoleEnum;
 import com.security.springbootsecurityjwt.repository.RoleRepository;
 import com.security.springbootsecurityjwt.service.RolService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +15,7 @@ public class RolServiceImple implements RolService {
     @Autowired
     private RoleRepository roleRepository;
     @Override
-    public Optional<Rol> findByname(String name) {
-        return roleRepository.findByName(name);
+    public Optional<RoleEntity> findByRoleEnum(RoleEnum roleEnum) {
+        return roleRepository.findByRoleEnum(roleEnum);
     }
 }
